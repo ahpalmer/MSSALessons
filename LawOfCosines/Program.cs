@@ -30,24 +30,4 @@ public class Program
         lawOfCosines.Solve(a, b, angleC);
         // Law of Cosines complete -----------------------------------------
     }
-
-    public static int DataStructureList()
-    {
-        // Size does change
-        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-
-        //numbers.Count();
-
-        numbers.Add(11);
-
-        return numbers.Sum();
-    }
-
-    public static int DataStructureArray()
-    {
-        // Size doesn't change
-        int[] numbers = new int[] { 1, 2, 3, 4, 5 };
-
-        return numbers.Sum();
-    }
 }

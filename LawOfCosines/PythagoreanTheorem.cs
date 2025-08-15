@@ -27,8 +27,7 @@ public class PythagoreanTheorem
     public double SquareRoot(double value)
     {
         double squareRoot = Math.Sqrt(value);
-        double answer = squareRoot + 1;
-        return answer;
+        return squareRoot;
     }
 
     // Example of prioritizing brevity over simplicity
