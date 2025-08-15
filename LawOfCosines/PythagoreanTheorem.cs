@@ -8,14 +8,15 @@ namespace SimpleMathExamples;
 
 public class PythagoreanTheorem
 {
-    public void Solve(double a, double b)
+    public double Solve(double a, double b)
     {
         double aSquared = Squared(a);
         double bSquared = Squared(b);
 
         double cSquared = aSquared + bSquared;
         double c = SquareRoot(cSquared);
-        Console.WriteLine(c);
+
+        return c;
     }
 
     public double Squared(double value)
@@ -25,13 +26,15 @@ public class PythagoreanTheorem
 
     public double SquareRoot(double value)
     {
-        return Math.Sqrt(value);
+        double squareRoot = Math.Sqrt(value);
+        double answer = squareRoot + 1;
+        return answer;
     }
 
     // Example of prioritizing brevity over simplicity
     public double EntirePythagoreanTheorem(double a, double b)
     {
-        double c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
+        double c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2)) + 1;
 
         return c;
     }
