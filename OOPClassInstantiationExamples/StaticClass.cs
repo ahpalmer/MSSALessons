@@ -7,7 +7,6 @@ public static class StaticClass
         Console.WriteLine("This is a message from a static class.");
     }
 
-    
     // Can you write a non-static method in a static class?  Try uncommenting the code below.
     // public void NonStaticMethod()
     // {

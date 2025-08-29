@@ -1,11 +1,13 @@
 ﻿using System;
 using OOPClassInstantiationExamples;
+using SimpleMathExamples;
 
 public class Program
 {
     public static void Main(string[] args)
     {
         // How do you intantiate (create objects) from classes?
+        // Rule: always think of how an object is instantiated.
 
         // Let's look at the standard object: a public class.  Our example is called "StandardPublicClass"
         // Can you run a method from this class?  Let's try
@@ -25,7 +27,14 @@ public class Program
         StaticClass.StaticDisplayMessage();
 
         // Did it work?  Yes, because static classes do not need to be instantiated (no object creation needed).
-        // The class is automatically instantiated.  Static classes are confusing because they break our rule: always think of how an object is instantiated.
+        // The class is automatically instantiated by the compiler.  Static classes are confusing because they break our rule: always think of how an object is instantiated.
         // Static classes are used for utility or helper classes, or when you want to group methods together that do not need to be instantiated.
+
+
+        // Much more complicated instantiation:
+        PythagoreanTheorem pythagoreanTheorem = new PythagoreanTheorem(8, 11);
+        LawOfCosines lawOfCosines = new LawOfCosines(pythagoreanTheorem);
+        double answer = lawOfCosines.Solve(37);
+        System.Console.WriteLine(answer);
 	}
 }

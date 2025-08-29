@@ -8,22 +8,22 @@ namespace SimpleMathExamples;
 
 public class LawOfCosines
 {
-    private PythagoreanTheorem _pythagoraeanTheorem;
+    // private PythagoreanTheorem _pythagoraeanTheorem;
 
-    // Constructor.  This is the instruction manual for how you instantiate the class!
-    public LawOfCosines(PythagoreanTheorem pythagoreanTheorem)
-    {
-        _pythagoraeanTheorem = pythagoreanTheorem;
-    }
+    // // Constructor.  This is the instruction manual for how you instantiate the class!
+    // public LawOfCosines(PythagoreanTheorem pythagoreanTheorem)
+    // {
+    //     _pythagoraeanTheorem = pythagoreanTheorem;
+    // }
 
     public double Solve(
         PythagoreanTheorem pythagoreanTheorem,
         double angleC)
     {
-        double twoAB = TwoTimesATimesB(pythagoreanTheorem._sideA, pythagoreanTheorem._sideB);
+        double twoAB = TwoTimesATimesB(pythagoreanTheorem.SideA, pythagoreanTheorem.SideB);
         double twoABCosC = TwoABCosC(twoAB, angleC);
 
-        double lawOfCosCSquared = pythagoreanTheorem._aSquared + pythagoreanTheorem._bSquared - twoABCosC;
+        double lawOfCosCSquared = pythagoreanTheorem.ASquared + pythagoreanTheorem.BSquared - twoABCosC;
         double lawOfCosC = pythagoreanTheorem.SquareRoot(lawOfCosCSquared);
         Console.WriteLine(lawOfCosC);
         return lawOfCosC;
