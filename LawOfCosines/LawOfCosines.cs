@@ -8,7 +8,15 @@ namespace SimpleMathExamples;
 
 public class LawOfCosines
 {
-    public void Solve(double a, double b, double angleC)
+    // private PythagoreanTheorem _pythagoraeanTheorem;
+
+    // // Constructor.  This is the instruction manual for how you instantiate the class!
+    // public LawOfCosines(PythagoreanTheorem pythagoreanTheorem)
+    // {
+    //     _pythagoraeanTheorem = pythagoreanTheorem;
+    // }
+
+    public double Solve(double a, double b, double angleC)
     {
         PythagoreanTheorem pythagoreanTheorem = new PythagoreanTheorem();
 
@@ -21,24 +29,26 @@ public class LawOfCosines
         double lawOfCosCSquared = aSquared + bSquared - twoABCosC;
         double lawOfCosC = pythagoreanTheorem.SquareRoot(lawOfCosCSquared);
         Console.WriteLine(lawOfCosC);
+        return lawOfCosC;
     }
-    public static double TwoTimesATimesB(double a, double b)
+    public double TwoTimesATimesB(double a, double b)
     {
         return 2 * a * b;
     }
 
-    public static double TwoABCosC(double twoAB, double c)
+    public double TwoABCosC(double twoAB, double c)
     {
         return twoAB * Math.Cos(AngleInRadians(c));
     }
 
-    public static double AngleInRadians(double angleC)
+    public double AngleInRadians(double angleC)
     {
         return angleC * (Math.PI / 180);
     }
 
     // Example of prioritizing brevity over simplicity
-    public static double EntirePythagoreanTheorem(double a, double b)
+    // This method is equivalent to the four methods above combined into one.
+    public double EntirePythagoreanTheorem(double a, double b)
     {
         double c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
 
