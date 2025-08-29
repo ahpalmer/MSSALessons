@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace OOPClassInstantiationExamples;
 
-namespace SimpleMathExamples;
-
-public class PythagoreanTheorem
+public class PythagoreanTheoremInstatiation
 {
     // Fields
     public double SideA;
@@ -16,7 +10,7 @@ public class PythagoreanTheorem
     public double BSquared;
 
     // Constructor
-    public PythagoreanTheorem(double sideA, double sideB)
+    public PythagoreanTheoremInstatiation(double sideA, double sideB)
     {
         SideA = sideA;
         SideB = sideB;

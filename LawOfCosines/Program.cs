@@ -6,9 +6,6 @@ namespace SimpleMathExamples;
 
 public class Program
 {
-    int[] numbers = new int[] { 1, 2, 3, 4, 5 };
-
-
     static void Main(string[] args)
     {
         // Pythagorean Theorem ---------------------------------------------

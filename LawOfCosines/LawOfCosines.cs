@@ -8,14 +8,6 @@ namespace SimpleMathExamples;
 
 public class LawOfCosines
 {
-    // private PythagoreanTheorem _pythagoraeanTheorem;
-
-    // // Constructor.  This is the instruction manual for how you instantiate the class!
-    // public LawOfCosines(PythagoreanTheorem pythagoreanTheorem)
-    // {
-    //     _pythagoraeanTheorem = pythagoreanTheorem;
-    // }
-
     public double Solve(double a, double b, double angleC)
     {
         PythagoreanTheorem pythagoreanTheorem = new PythagoreanTheorem();

@@ -1,17 +1,18 @@
 ﻿using System;
 using OOPClassInstantiationExamples;
-using SimpleMathExamples;
+
+namespace OOPClassInstantiationExamples;
 
 public class Program
 {
     public static void Main(string[] args)
     {
-        // How do you intantiate (create objects) from classes?
+        // How do you instantiate (create objects) from classes?
         // Rule: always think of how an object is instantiated.
 
         // Let's look at the standard object: a public class.  Our example is called "StandardPublicClass"
         // Can you run a method from this class?  Let's try
-        StandardPublicClass.DisplayMessage();
+        // StandardPublicClass.DisplayMessage();
 
         // Did it work?  No, because we need to create an object from the class first.
         StandardPublicClass standardPublicClass = new StandardPublicClass();
@@ -32,9 +33,9 @@ public class Program
 
 
         // Much more complicated instantiation:
-        PythagoreanTheorem pythagoreanTheorem = new PythagoreanTheorem(8, 11);
+        PythagoreanTheoremInstatiation pythagoreanTheorem = new PythagoreanTheoremInstatiation(8, 11);
         LawOfCosines lawOfCosines = new LawOfCosines(pythagoreanTheorem);
         double answer = lawOfCosines.Solve(37);
-        System.Console.WriteLine(answer);
-	}
+        Console.WriteLine(answer);
+    }
 }
